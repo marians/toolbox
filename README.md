@@ -1,2 +1,11 @@
+[![Docker Repository on Quay](https://quay.io/repository/marian/toolbox/status "Docker Repository on Quay")](https://quay.io/repository/marian/toolbox)
+
 # toolbox
-A debian based docker image to quickly do useful stuff on some server
+
+Everybody must have their personal Docker image debugging, getting things done etcd. This is mine.
+
+Execute:
+
+```nohighlight
+docker run --rm -ti quay.io/marian/toolbox
+```
