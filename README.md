@@ -9,3 +9,14 @@ Execute:
 ```nohighlight
 docker run --rm -ti quay.io/marian/toolbox
 ```
+
+On Kubernetes as a Job:
+
+```nohighlight
+kubectl run marian-toolbox \
+  --stdin \
+  --tty \
+  --restart Never \
+  --rm \
+  --image quay.io/marian/toolbox
+```
