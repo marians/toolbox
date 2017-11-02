@@ -14,6 +14,7 @@ On Kubernetes as a Job:
 
 ```nohighlight
 kubectl run marian-toolbox \
+  --namespace <my-namespace> \
   --stdin \
   --tty \
   --restart Never \
