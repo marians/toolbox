@@ -7,7 +7,7 @@ RUN apt-get update \
 
 # Installing gsctl
 RUN GSCTL_VERSION=0.15.0 \
- && curl -O https://github.com/giantswarm/gsctl/releases/download/${GSCTL_VERSION}/gsctl-${GSCTL_VERSION}-linux-amd64.tar.gz \
+ && curl -L -O https://github.com/giantswarm/gsctl/releases/download/${GSCTL_VERSION}/gsctl-${GSCTL_VERSION}-linux-amd64.tar.gz \
  && tar xzf gsctl-${GSCTL_VERSION}-linux-amd64.tar.gz \
  && cp gsctl-${GSCTL_VERSION}-linux-amd64/gsctl /usr/local/bin/ \
  && rm -rf gsctl*
