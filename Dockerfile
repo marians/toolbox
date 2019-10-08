@@ -6,7 +6,7 @@ RUN apt-get update \
  && pip install yq
 
 # Installing gsctl
-RUN GSCTL_VERSION=0.15.0 \
+RUN GSCTL_VERSION=0.16.2 \
  && curl -L -O https://github.com/giantswarm/gsctl/releases/download/${GSCTL_VERSION}/gsctl-${GSCTL_VERSION}-linux-amd64.tar.gz \
  && tar xzf gsctl-${GSCTL_VERSION}-linux-amd64.tar.gz \
  && cp gsctl-${GSCTL_VERSION}-linux-amd64/gsctl /usr/local/bin/ \
